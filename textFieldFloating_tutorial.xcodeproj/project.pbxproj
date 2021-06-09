@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		F6B15EC42670A2D700D5C3CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B15EC22670A2D700D5C3CB /* Main.storyboard */; };
 		F6B15EC62670A2D800D5C3CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B15EC52670A2D800D5C3CB /* Assets.xcassets */; };
 		F6B15EC92670A2D800D5C3CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B15EC72670A2D800D5C3CB /* LaunchScreen.storyboard */; };
+		F6B15ED22670D1E200D5C3CB /* TweeTextField in Frameworks */ = {isa = PBXBuildFile; productRef = F6B15ED12670D1E200D5C3CB /* TweeTextField */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B15ED22670D1E200D5C3CB /* TweeTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = textFieldFloating_tutorial;
+			packageProductDependencies = (
+				F6B15ED12670D1E200D5C3CB /* TweeTextField */,
+			);
 			productName = textFieldFloating_tutorial;
 			productReference = F6B15EB92670A2D700D5C3CB /* textFieldFloating_tutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = F6B15EB02670A2D700D5C3CB;
+			packageReferences = (
+				F6B15ED02670D1E200D5C3CB /* XCRemoteSwiftPackageReference "TweeTextField" */,
+			);
 			productRefGroup = F6B15EBA2670A2D700D5C3CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6B15ED02670D1E200D5C3CB /* XCRemoteSwiftPackageReference "TweeTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/oleghnidets/TweeTextField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6B15ED12670D1E200D5C3CB /* TweeTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6B15ED02670D1E200D5C3CB /* XCRemoteSwiftPackageReference "TweeTextField" */;
+			productName = TweeTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6B15EB12670A2D700D5C3CB /* Project object */;
 }
